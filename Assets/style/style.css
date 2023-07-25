@@ -1,0 +1,183 @@
+:root{
+ --Yellows--:#f5deb3;
+--whites--: #ffffff;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    min-height: 10vh;
+    background-color: var(--Yellows--);
+    text-align: center;
+}
+
+nav{
+    width: 64rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid white;
+   
+}
+
+a{
+    text-decoration: none; 
+    color: white;
+}
+
+
+main{
+    min-height: 80vh;
+}
+
+#photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: 20rem;
+
+}
+
+.hair{
+    width: 16rem;
+    object-fit: cover;
+}
+
+article{
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 6px 5px 24px black;
+}
+
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-size: 10px;
+}
+
+#info{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: 20rem; 
+  
+}
+
+div{
+    width: 7rem;
+}
+
+h5, caption{
+    font-weight: bolder;
+}
+th, tr, td{
+border:solid;
+ border-color:black;
+ text-align: center;
+ 
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--Yellows--);
+    min-height: 10vh;
+    width: 79rem;
+    padding: 0.5rem;
+
+}
+
+footer a{
+    color: black
+}
+
+#mail{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap:1rem;
+}
+
+@media only screen and (min-width:320px) and (max-width:767px){
+
+    nav{
+        flex-direction:column;
+        width: auto;
+        padding: 1rem;
+    }
+
+    #photos{
+        flex-direction: column;
+        width: auto;
+        height:65rem ;
+        
+    }
+
+    footer{
+        flex-direction: column;
+        width: auto;
+    }
+
+    
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    
+    nav{
+        flex-direction:column;
+        width: auto;
+        padding: 1rem;
+    }
+
+    a{
+        font-size: 20px;
+    }
+
+    #photos{
+        flex-direction: column;
+        width: auto;
+        height:65rem ;
+        
+    }
+
+    footer{
+        flex-direction: column;
+        width: auto;
+    }
+
+    h2{
+      
+    }
+    h4{
+    
+        font-size: 15px;
+    }
+
+    th, tr, td, ul{
+        font-size: 20px;
+    }
+
+    }
+
+    @media only screen and (min-width:1024px){
+
+        footer{
+            width: auto;
+        }
+    }
